@@ -12,7 +12,7 @@ ng serve
 
 ## product final goal
 
-Provide user a clean and friendly shopping websites that promote products online. Final product will be hosted at Google cloud console and present a live demo.
+Provide user a clean and friendly shopping websites that promote products online on Mobile and Web. Final product will be hosted at Google cloud console and present a live demo.
 
 functions:
 
