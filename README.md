@@ -27,12 +27,13 @@ functions:
 
 - Allows users to sign up and log in with an account through express and mongoDB
 
-- Able to do CRUD operations on products
+- Able to do CRUD operations on products and user accounts
 
 - Components will be all broken down for easier modifications
 
 - Password or important data will be using salts as a safeguard method
 
+- Login, Sign up for user database
 
 ## What the product won't include
 
