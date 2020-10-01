@@ -18,6 +18,9 @@ import { HomeComponent } from './home/home.component';
 import { ShopComponent } from './shop/shop.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { ViewcartComponent } from './viewcart/viewcart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CollectionComponent } from './collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { AboutComponent } from './about/about.component';
     ShopComponent,
     ContactComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    CheckoutComponent,
+    ViewcartComponent,
+    CollectionComponent
   ],
   imports: [
     BrowserModule,
