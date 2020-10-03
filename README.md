@@ -1,10 +1,11 @@
-# shop
+# shop (Not yet complete)
 
 This project was generated with Angular for frontend and Express for backend. The database used is MongoDB
 
 ## angular 
 
-testing angular independantly: ng serve
+testing angular independantly (general idea of the web page): ng serve \
+
 create production for server: ng build --prod
 
 ## express
