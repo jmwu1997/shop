@@ -21,6 +21,12 @@ import { AboutComponent } from './about/about.component';
 import { ViewcartComponent } from './viewcart/viewcart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CollectionComponent } from './collection/collection.component';
+import { HomeCarouselComponent } from './home/home-carousel/home-carousel.component';
+import { HomeFeatureComponent } from './home/home-feature/home-feature.component';
+import { CollectionBannerComponent } from './collection/collection-banner/collection-banner.component';
+import { CollectionFeaturesComponent } from './collection/collection-features/collection-features.component';
+
+
 
 @NgModule({
   declarations: [
@@ -42,7 +48,12 @@ import { CollectionComponent } from './collection/collection.component';
     HomeComponent,
     CheckoutComponent,
     ViewcartComponent,
-    CollectionComponent
+    CollectionComponent,
+    HomeCarouselComponent,
+    HomeFeatureComponent,
+    CollectionBannerComponent,
+    CollectionFeaturesComponent,
+
   ],
   imports: [
     BrowserModule,

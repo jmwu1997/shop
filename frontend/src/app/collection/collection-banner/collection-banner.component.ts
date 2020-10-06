@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
-import { CollectionContent } from 'src/app/models/collection'
+import { CollectionContent } from 'src/app/models/collection';
 
 @Component({
-  selector: 'app-collection',
-  templateUrl: './collection.component.html',
-  styleUrls: ['./collection.component.css']
+  selector: 'app-collection-banner',
+  templateUrl: './collection-banner.component.html',
+  styleUrls: ['./collection-banner.component.css']
 })
-export class CollectionComponent implements OnInit {
+export class CollectionBannerComponent implements OnInit {
 
   collections: CollectionContent[] = []
 
@@ -16,6 +16,7 @@ export class CollectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.collections = this.productService.getCollectionContent()
+    console.log(this.collections)
   }
 
 }

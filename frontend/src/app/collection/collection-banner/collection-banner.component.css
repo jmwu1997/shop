@@ -1,0 +1,23 @@
+/*Can achive using vw css unit*/
+.banner{
+    width: 100vw;
+    position: relative;
+    margin-left: -49vw;
+    height: 450px;
+    left: 50%;
+    background-color:white;
+  }
+  
+.banner-img {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+}
+
+.righthalf-text{
+    padding: 10% 10% 10% 10%;
+}
+
+.row{
+    margin-top:100px;
+  }
