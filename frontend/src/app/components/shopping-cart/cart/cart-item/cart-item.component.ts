@@ -9,9 +9,13 @@ export class CartItemComponent implements OnInit {
 
   @Input() cartItem: any
 
-  constructor() { }
+
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

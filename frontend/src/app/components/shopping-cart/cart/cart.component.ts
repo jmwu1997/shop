@@ -18,6 +18,13 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
 
+    if(localStorage.getItem('cartItems')!=null){
+     this.cartItems = JSON.parse(localStorage.getItem('cartItems'))
+     this.cartItems.forEach(item => {
+      this.cartTotal += (item.qty*item.price)
+    })
+    }
+
     this.msg.getMsg().subscribe((product: Product) =>{
       this.addProductToCart(product)
     })
@@ -45,6 +52,8 @@ export class CartComponent implements OnInit {
     this.cartItems.forEach(item => {
       this.cartTotal += (item.qty*item.price)
     })
+
+    localStorage.setItem('cartItems', JSON.stringify(this.cartItems))
   }
 
 }
