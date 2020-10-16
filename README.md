@@ -24,7 +24,8 @@ server start: npm start
 Provide user a clean,friendly and fully responsive shopping websites that promote products online on WebMobile and Web. Final product will give a template for user to use to create their own personal shopping website. The website will be easy setup and use by following documentations provided later. User will be able to easily do CRUD operations on products and have their own user database. The connections between the backend connections will be secured and reliable.
 
 ## Documentation
-Software used: Visual Studio <br>
+Software used: Visual Studio, Postman, MongodbCompass <br>
+
 Framework used: (Mean Stack) Mongodb, Express, Angular, Nodejs
 
 Languages: Html/Css/Typescript/Javascript
@@ -32,7 +33,7 @@ Languages: Html/Css/Typescript/Javascript
 Page template: Most are taken from bootstrap with modifications to it.
 
 ## file locations
-All backend files are in the backend folder.
+All backend files are in the backend folder.<br>
 Frontend source codes are in frontend/src/app directory
 
 
