@@ -9,5 +9,7 @@
       <a class="p-2 text-dark" routerLink="/contact" routerLinkActive="active">Contact</a>
       <a class="p-2 text-dark" routerLink="/about" routerLinkActive="active">About Us</a>
     </nav>
-    <a class="btn btn-outline-primary" routerLink="/login" routerLinkActive="active">Login</a>
+    <a class="btn btn-outline-primary" *ngIf="isLoggedIn()==false" routerLink="/login" routerLinkActive="active">Login</a>
+    <a class="btn btn-outline-primary" *ngIf="isLoggedIn()==true" routerLink="/user" routerLinkActive="active">Account</a>
+    <button class="btn btn-outline-primary" *ngIf="isLoggedIn()==true||this.router.url === '/user'" id="logout" routerLink="/" routerLinkActive="active">LogOut</button>
   </div>

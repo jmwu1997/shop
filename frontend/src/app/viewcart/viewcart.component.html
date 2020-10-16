@@ -1,16 +1,53 @@
-<!--Section: Block Content-->
-<section>
+<section class='body'>
+  <!-- Main content -->
+  <div class="container">
+      <div *ngIf="cartItems == null" class="alert alert-info">Cart Empty </div>
 
+      <div class="cartTitle" style="text-align: center;">Shopping Carts</div>
 
-    
-    
+      <hr>
 
+      <div class="row">
+        <div class="col">
+          
+        </div>
+        <div class="col">
+          &nbsp;&nbsp;Product
+        </div>
+        <div class="col">
+          Quantities
+        </div>
+        <div class="col">
+          Price
+        </div>
+        <div class="col">
+          
+        </div>
+      </div>
 
+      <hr>
 
+      <div *ngIf="cartItems!= null">
+          <div class="products" *ngFor="let item of cartItems">
+              <app-viewcart-item [cartItem]="item"></app-viewcart-item>
+          </div>
+      </div> 
 
+      <hr>
 
+      <div class='cartTotal'>
+        Total: {{ cartTotal | currency:"CAD"}}
+        <br>
+        Shipping: Calculated at checkout
+        <br>
+        Order Total: {{ cartTotal | currency:"CAD"}}
+      </div>
 
-  <app-footer></app-footer>
-
+      <hr>
+      <button type="button" class="btn btn-outline-dark">Proceed to check out</button>
+  </div>
+  <div class="clear"></div>
+  <!-- Footer -->
+  <app-footer class="footer"></app-footer>
 </section>
 

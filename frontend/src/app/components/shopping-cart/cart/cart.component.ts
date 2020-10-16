@@ -18,6 +18,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
 
+    //get local storage
     if(localStorage.getItem('cartItems')!=null){
      this.cartItems = JSON.parse(localStorage.getItem('cartItems'))
      this.cartItems.forEach(item => {
@@ -25,34 +26,44 @@ export class CartComponent implements OnInit {
     })
     }
 
+    //subscribe to observable
     this.msg.getMsg().subscribe((product: Product) =>{
       this.addProductToCart(product)
     })
   }
 
+  
   addProductToCart(product: Product){
 
+    
     let item_exists= false
+
+    // add item qty
     for(let i in this.cartItems){
       if(this.cartItems[i].productId === product.id){
         this.cartItems[i].qty++
         item_exists=true
       }
     }
+
+    // push new item if item doesnt exists
     if (item_exists == false){
       this.cartItems.push({
         productId: product.id,
         productName: product.name,
         qty: 1,
-        price: product.price
+        price: product.price,
+        img: product.imageUrl
       })
     }
 
+    //calculate total
     this.cartTotal = 0
     this.cartItems.forEach(item => {
       this.cartTotal += (item.qty*item.price)
     })
 
+    //stroge into local storage for future use
     localStorage.setItem('cartItems', JSON.stringify(this.cartItems))
   }
 

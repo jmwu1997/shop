@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <img [src]="cartItem.img" class="product image" style="width: 75%; height: 75%">
+      </div>
+      <div class="col-sm">
+        {{cartItem.productName}}
+      </div>
+      <div class="col-sm">
+        {{cartItem.qty}}
+      </div>
+      <div class="col-sm">
+        &nbsp;&nbsp;{{cartItem.qty * cartItem.price}}
+      </div>
+      <div class="col-sm">
+      <button type="button" class="btn btn-sm btn-outline-secondary product-btn" (click)="handleRemoveFromCart()">Remove 1 from cart</button>
+    </div>
+    </div>
+  </div>

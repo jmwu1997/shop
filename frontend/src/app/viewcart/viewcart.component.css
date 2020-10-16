@@ -1,0 +1,11 @@
+.container{
+    font-size: small;
+    float: left; 
+    width: 65%;
+    position: relative;
+    overflow: auto; 
+    height: 80vh;
+ }
+
+
+ .clear { clear:both; }

@@ -12,6 +12,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { ViewcartComponent } from '../viewcart/viewcart.component';
 import { CheckoutComponent } from '../checkout/checkout.component';
 import { CollectionComponent } from '../collection/collection.component';
+import { UserComponent } from '../user/user.component';
 
 const routes: Routes = [
 
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'viewcart',component:ViewcartComponent},
   {path:'checkout',component:CheckoutComponent},
-  {path:'collection',component:CollectionComponent}
+  {path:'collection',component:CollectionComponent},
+  {path:'user',component:UserComponent}
 
 ]; // sets up routes constant where you define your routes
 
