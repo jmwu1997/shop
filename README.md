@@ -15,9 +15,13 @@ testing angular independantly: ng serve
 
 create production for server: ng build
 
+angular will be hosted at port 4200;
+
 ## test express
 
 server start: npm start
+
+express will be hosted at port 3000;
 
 ## product final goal
 
