@@ -66,7 +66,7 @@ front/end/src/app/app-routing includes all the routing<br>
 
 - Password or important data will be using salts as a safeguard method
 
-- Login, Sign up for user database
+- Login, Sign up, update for user database
 
 ## What the product won't include
 
