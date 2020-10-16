@@ -32,9 +32,20 @@ Languages: Html/Css/Typescript/Javascript
 
 Page template: Most are taken from bootstrap with modifications to it.
 
+Images: all image sources comes from placehold.it for easier implementation. 
+
 ## file locations
 All backend files are in the backend folder.<br>
 Frontend source codes are in frontend/src/app directory
+
+## just where things are
+
+front/end/src/app/models contains all the object models used in the project <br>
+
+front/end/src/app/services contains all the services used in the project<br> 
+In product.service.ts, it includes all the data that would output to the website. This is usually coming from another api but for sake of implementation I just created manually.<br> 
+
+front/end/src/app/app-routing includes all the routing<br>
 
 
 ## functions:
