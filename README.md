@@ -1,4 +1,4 @@
-# shop (Not yet complete)
+# shop
 
 This project was generated with Angular for frontend and Express for backend. The database used is MongoDB
 
@@ -54,11 +54,11 @@ front/end/src/app/app-routing includes all the routing<br>
 
 ## functions:
 
+- The product will be using MEAN stack
+
 - Establish brand identity and hot items on home page
 
 - Providing corporate information and contact information page.
-
-- Allows users to sign up and log in with an account through express and mongoDB
 
 - Able to do CRUD operations on products and user accounts
 
@@ -66,7 +66,7 @@ front/end/src/app/app-routing includes all the routing<br>
 
 - Password or important data will be using salts as a safeguard method
 
-- Login, Sign up, update for user database
+- Login, Sign up, Update for user database
 
 ## What the product won't include
 
