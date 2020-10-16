@@ -1,0 +1,76 @@
+<div class="container emp-profile">
+            <form #userForm= "ngForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                    <h5>
+                                        {{userName}}
+                                    </h5>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>{{userEmail}}</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" id="updateUser" name="email" placeholder="Confirm Email Address" [(ngModel)]="updated_user.email"><br>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>{{userName}}</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" id="updateUser" name="name" placeholder="New name" [(ngModel)]="updated_user.name"><br>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Address</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>{{userAddress}}</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" id="updateUser" name="address" placeholder="New address" [(ngModel)]="updated_user.address"><br>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                            </div>
+                                            <div class="col-md-4">
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="submit" id="updateUser" value="Update"><br>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>           
+        </div>

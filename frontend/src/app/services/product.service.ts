@@ -9,13 +9,13 @@ import { CollectionContent } from 'src/app/models/collection'
 export class ProductService {
 
   products: Product[]=[
-    //         id   name         description            price  image url
-    new Product(1, 'Product 1', 'Product 1 description', 221, 'http://placehold.it/600x600'),
-    new Product(2, 'Product 2', 'Product 2 description', 102, 'http://placehold.it/600x600'),
-    new Product(3, 'Product 3', 'Product 3 description', 103, 'http://placehold.it/600x600'),
-    new Product(4, 'Product 4', 'Product 4 description', 104, 'http://placehold.it/600x600'),
-    new Product(5, 'Product 5', 'Product 5 description', 105, 'http://placehold.it/600x600'),
-    new Product(6, 'Product 6', 'Product 6 description', 106, 'http://placehold.it/600x600')
+    //         id   name         description            price QTY image url
+    new Product(1, 'Product 1', 'Product 1 description', 221, 0 ,'http://placehold.it/600x600'),
+    new Product(2, 'Product 2', 'Product 2 description', 102, 0 ,'http://placehold.it/600x600'),
+    new Product(3, 'Product 3', 'Product 3 description', 103, 0 ,'http://placehold.it/600x600'),
+    new Product(4, 'Product 4', 'Product 4 description', 104, 0 ,'http://placehold.it/600x600'),
+    new Product(5, 'Product 5', 'Product 5 description', 105, 0 ,'http://placehold.it/600x600'),
+    new Product(6, 'Product 6', 'Product 6 description', 106, 0 ,'http://placehold.it/600x600')
   ]
 
   homes: HomeContent[]=[

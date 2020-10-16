@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
@@ -25,7 +25,9 @@ import { HomeCarouselComponent } from './home/home-carousel/home-carousel.compon
 import { HomeFeatureComponent } from './home/home-feature/home-feature.component';
 import { CollectionBannerComponent } from './collection/collection-banner/collection-banner.component';
 import { CollectionFeaturesComponent } from './collection/collection-features/collection-features.component';
-
+import { ViewcartItemComponent } from './viewcart/viewcart-item/viewcart-item.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -53,11 +55,17 @@ import { CollectionFeaturesComponent } from './collection/collection-features/co
     HomeFeatureComponent,
     CollectionBannerComponent,
     CollectionFeaturesComponent,
+    ViewcartItemComponent,
+    UserComponent,
+    NavComponent
+    
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -28,15 +28,15 @@ export class FiltersComponent implements OnInit {
   ngOnInit(): void {
     this.productList = this.productService.getProducts()
 
-    let button0 = document.getElementById('reset');;
+    let button0 = document.getElementById('reset')
     button0.addEventListener("click", () => { this.productList.sort(function(a, b){
     return a.id - b.id;});});
 
-    let button1 = document.getElementById('sortlowtohigh');;
+    let button1 = document.getElementById('sortlowtohigh')
     button1.addEventListener("click", () => { this.productList.sort(function(a, b){
     return a.price - b.price;});});
 
-    let button2 = document.getElementById('sorthightolow');;
+    let button2 = document.getElementById('sorthightolow')
     button2.addEventListener("click", () => { this.productList.sort(function(a, b){
     return b.price - a.price;});});
 
